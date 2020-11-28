@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block head%}
+
+{% endblock %}
+
+{% block body %}
+<div>
+    <h1>NLP application</h1>
+
+    <form action="/predict" method="POST">
+        <div>
+            <p>Enter your text</p>
+            <input type="text" name = "text1" id="text1">
+        </div>
+        
+        <div>
+            <p>In progress</p>
+            <input type="text" name = "text2" id="text2">
+        </div>
+
+        <div>
+            <p>In progress</p>
+            <input type="text" name = "text3" id="text3">
+        </div>
+
+        <div>
+            <p>In progress</p>
+            <input type="text" name = "text4" id="text4">
+        </div>
+
+        <input type="submit" value="Predict">
+    </form>
+    <h2>Predicted: {{pred}}</h2>
+</div>
+{% endblock %}
