@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+}
+
+input[type=text] {
+    border: 2px solid #E64C27;
+    border-radius: 4px;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+ }
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #E64C27;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    width: 32%;
+    text-decoration: none;
+    margin: 20px 2px;
+    cursor: pointer;
+}
