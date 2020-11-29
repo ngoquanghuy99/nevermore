@@ -1,1 +1,1 @@
-An application to analyze text from users.
+nevermore - An NLP application to analyze English text from users.
