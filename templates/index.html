@@ -13,24 +13,15 @@
             <p>Enter your text</p>
             <input type="text" name = "text1" id="text1">
         </div>
-        
-        <div>
-            <p>In progress</p>
-            <input type="text" name = "text2" id="text2">
-        </div>
 
-        <div>
-            <p>In progress</p>
-            <input type="text" name = "text3" id="text3">
-        </div>
-
-        <div>
-            <p>In progress</p>
-            <input type="text" name = "text4" id="text4">
-        </div>
-
-        <input type="submit" value="Predict">
+        <button type="submit" name="POS" value="POS Tagging"> POS Tagging </button>
+        <button type="submit" name="NER" value="Named Entity Recognition"> Named Entity Recognition </button>
+        <button type="submit" name="SENTIMENT" value="Sentiment Analysis"> Sentiment Analysis </button>
+        <button type="submit" name="CLASSIFICATION" value="Text Classification" > Text Classification </button>
+        <button type="submit" name="SUMMARIZATION" value="Text Summarization" > Text Summarization </button>
     </form>
-    <h2>Predicted: {{pred}}</h2>
+
+
+    <h3>Result: {{pred}}</h3>
 </div>
 {% endblock %}
