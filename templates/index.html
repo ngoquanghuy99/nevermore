@@ -6,6 +6,7 @@
 
 {% block body %}
 <body>
+<div>
     <h1>Nevermore</h1>
     <p>An NLP application to analyze English text from users</p>
 
@@ -22,9 +23,7 @@
 	        <button class = "btn" type="submit" name="SUMMARIZATION" value="Text Summarization" > Text Summarization </button>
 	    </div>
     </form>
-    <div class = "result">
-    	<h3>Result</h3>
-    	<h3 class = "result1">{{pred}}</h3>
-    </div>
+    <h3>Result: {{pred}}</h3>
+</div>
 </body>
 {% endblock %}
