@@ -5,23 +5,26 @@
 {% endblock %}
 
 {% block body %}
-<div>
-    <h1>NLP application</h1>
+<body>
+    <h1>Nevermore</h1>
+    <p>An NLP application to analyze English text from users</p>
 
     <form action="/predict" method="POST">
         <div>
             <p>Enter your text</p>
-            <input type="text" name = "text1" id="text1">
+            <textarea rows="9" cols="70" type="text" name = "text1" id="text1"></textarea>
         </div>
-
-        <button type="submit" name="POS" value="POS Tagging"> POS Tagging </button>
-        <button type="submit" name="NER" value="Named Entity Recognition"> Named Entity Recognition </button>
-        <button type="submit" name="SENTIMENT" value="Sentiment Analysis"> Sentiment Analysis </button>
-        <button type="submit" name="CLASSIFICATION" value="Text Classification" > Text Classification </button>
-        <button type="submit" name="SUMMARIZATION" value="Text Summarization" > Text Summarization </button>
+        <div class = "gr-btn">
+	        <button class = "btn" type="submit" name="POS" value="POS Tagging"> POS Tagging </button>
+	        <button class = "btn" type="submit" name="NER" value="Named Entity Recognition"> Named Entity Recognition</button>
+	        <button class = "btn" type="submit" name="SENTIMENT" value="Sentiment Analysis"> Sentiment Analysis </button>
+	        <button class = "btn" type="submit" name="CLASSIFICATION" value="Text Classification">Text Classification</button>
+	        <button class = "btn" type="submit" name="SUMMARIZATION" value="Text Summarization" > Text Summarization </button>
+	    </div>
     </form>
-
-
-    <h3>Result: {{pred}}</h3>
-</div>
+    <div class = "result">
+    	<h3>Result</h3>
+    	<h3 class = "result1">{{pred}}</h3>
+    </div>
+</body>
 {% endblock %}

@@ -1,26 +1,62 @@
-body {
-    margin: 0;
-    padding: 0;
-    margin-left: 20px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #444;
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "montserrat",sans-serif;
+	background-color: #353b48;
+	color: white;
 }
+.gr-btn{
+	margin-top: 20px;
+	display: flex;
+	float: left;
+}
+.result{
+	clear: left;
+}
+.btn{
+	margin-right: 20px;
+	width: 200px;
+	height: 60px;
+	background:none;
+	border:4px solid;
+	color: #5F9EA0;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 12px;
+	position: relative;
+}
+.btn::before, .btn::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+	background:#353b48;
+	transform: skewX(50deg);
+	transition: .4s linear;
+}
+.btn::before{
+	top:-4px;
+	left: 10%;
+}
+.btn::after{
+	bottom:-4px;
+	right: 10%;
+}
+.btn:hover::before{
+	left: 80%;
 
-input[type=text] {
-    border: 2px solid #E64C27;
-    border-radius: 4px;
-    width: 30%;
-    padding: 12px 20px;
-    margin: 8px 0;
- }
-
-input[type=button], input[type=submit], input[type=reset] {
-    background-color: #E64C27;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    width: 32%;
-    text-decoration: none;
-    margin: 20px 2px;
-    cursor: pointer;
+}
+.btn:hover::after{
+	right: 80%;
+}
+.result{
+	margin-top: 20px;
+	padding-top: 20px;
+}
+h3.result1{
+	width: 1000px;
+	height: 60px;
+	border: 2px solid gray;
+	background-color: white;
 }
